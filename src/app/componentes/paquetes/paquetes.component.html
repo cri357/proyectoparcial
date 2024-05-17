@@ -1,0 +1,30 @@
+<section id="paqutes">
+<div class="center-align">
+    <h1>Paquetes</h1>
+  </div>
+        <table>
+            <thead>
+              <tr>
+                <th>Característica</th>
+                <th>Plan Anual</th>
+                <th>Plan Mensual (Costo Anual)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Costo</td>
+                <td>{{ planes[0].calcularCostoAnual() | currency:'MXN' }}</td>
+                <td>{{ planes[1].calcularCostoAnual() | currency:'MXN' }}</td>
+              </tr>
+              <tr *ngFor="let caracteristica of caracteristicasUnicas">
+                <td>{{ caracteristica }}</td>
+                <td class="{{ planes[0].caracteristicas.includes(caracteristica) ? 'si' : 'no' }}">
+                  {{ planes[0].caracteristicas.includes(caracteristica) ? 'Sí' : 'No' }}
+                </td>
+                <td class="{{ planes[1].caracteristicas.includes(caracteristica) ? 'si' : 'no' }}">
+                  {{ planes[1].caracteristicas.includes(caracteristica) ? 'Sí' : 'No' }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </section>

@@ -1,0 +1,45 @@
+.parallax {
+    /* The image used */
+    background-image: url("../../../assets/img/campo.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+    min-width: auto;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    /* The image used */
+    background-image: url("../../../assets/img/camp.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+    width: auto;
+    
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Estilos personalizados para historia.component.html */
+@media only screen and (max-width: 1000px) {
+  .parallax {
+     height: auto;
+   }
+   h1{
+     font-size: 1.5rem;
+     
+   }
+ }
+
+ p{
+  font-size: 18px;
+ }

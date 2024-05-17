@@ -1,0 +1,35 @@
+
+.carousel {
+  height: 85vh; /* Ajusta esto según necesites */
+}
+
+.carousel .carousel-item {
+  display: flex;
+  height: 100%;
+}
+
+.carousel .carousel-item img {
+  max-height: 100%; 
+  object-fit: cover; 
+  width: 100%; 
+}
+/* Estilos para tablets */
+@media (min-width: 900px) and (max-width: 1024px) {
+  .carousel {
+    height: 80vh; /* Altura más pequeña para tablets */
+  }
+}
+
+/* Estilos para móviles */
+@media (max-width: 1000px) {
+  .carousel {
+    height: 50vh; /* Altura más pequeña para móviles */
+  }
+}
+/* Estilos personalizados para header.component.html */
+@media only screen and (max-width: 1000px) {
+  .carousel-item img {
+     width: 50%;
+     height: auto;
+   }
+ }

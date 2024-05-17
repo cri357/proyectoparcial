@@ -1,0 +1,29 @@
+<div class="row" id="contacto">
+  <div class="col s12 center-align">
+    <h1>{{titulo}}</h1>
+  </div>
+</div>
+
+<div class="chatbot-container">
+  <div class="chatbot-header">
+    <img src="../../../assets/img/logo2.png" alt="Imagen del Chatbot" class="chatbot-image">
+    <h2>Solicita informacion en las redes sociales y Nosotros te contactamos por Whatssap</h2>
+  </div>
+  <div class="chatbot-body">
+    <form>
+      <div class="input-field">
+        <label for="telefono"></label>
+        <input [(ngModel)]="telefono" placeholder="Ingresa tu número de teléfono" class="validate">
+      </div>
+      <div class="input-field">
+        <button (click)="actualizarTelefonoYEnviarPreguntas()" class="btn waves-effect waves-light">Enviar</button>
+      </div>
+    </form>
+    <div class="social-links">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/groups/1017701529716126" aria-label="Facebook de Tienda Jordan" target="_blank" rel="noopener noreferrer">
+        <img src="../../../assets/img/facebook.png" alt="Facebook logo">
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+th, td {
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+th {
+    background-color: #bdbdbd  ; 
+    color: black;
+    font-size: 16px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #000000;
+}
+
+/* Resalta la fila sobre la que el usuario pasa el mouse */
+tbody tr:hover {
+    background-color: #f5f5f5 ;
+}
+
+/* Alternar colores de fondo para las filas */
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5   ;
+}
+
+/* Estilo para marcar características disponibles */
+.si {
+    color: #000000 ;
+}
+
+/* Estilo para marcar características no disponibles */
+.no {
+    color: #d50000 ; 
+}
+
+/* Estilos personalizados para paquetes.component.html */
+@media only screen and (max-width: 100px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    th {
+      background: #f1f1f1;
+      border-bottom: 1px solid #ccc;
+    }
+    td {
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
+    }
+    td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+  }

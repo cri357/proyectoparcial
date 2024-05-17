@@ -1,0 +1,15 @@
+.colorIcono{
+    color: #000000  !important;
+}
+@media only screen and (max-width: 1000px) {
+    .nav-wrapper {
+       padding: 0;
+     }
+    .nav-mobile {
+       display: block;
+     }
+    .sidenav-trigger {
+       display: block;
+     }
+   }
+   

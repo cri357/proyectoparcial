@@ -1,0 +1,23 @@
+<hr>
+<section id="productos">
+  <div class="center-align">
+      <h1>Productos</h1>
+        </div>
+      <div class="product-container">
+        <div *ngFor="let product of products" class="product-circle" (click)="selectProduct(product)">
+          <div class="circle-content">
+            <img [src]="product.imageUrl" alt="Imagen del producto" class="product-image">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal para detalles del producto -->
+      <div *ngIf="selectedProduct" class="modal-background" (click)="closeDetails()">
+        <div class="modal-content" (click)="$event.stopPropagation()">
+          <h2>{{ selectedProduct.name }}</h2>
+          <img [src]="selectedProduct.imageUrl" alt="Imagen del producto" class="details-image">
+          <p>{{ selectedProduct.description }}</p>
+          <button (click)="closeDetails()">Cerrar</button>
+        </div>
+      </div>
+    </section>
